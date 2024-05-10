@@ -1,0 +1,8 @@
+name: vVanilla
+version: '${project.version}'
+main: club.vertuli.vvanilla.vVanilla
+api-version: '1.20'
+commands:
+  cpanel:
+    description: Opens admin panel
+    usage: "/cpanel"

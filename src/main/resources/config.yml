@@ -1,0 +1,12 @@
+#Global messages configuration section
+entry_message: 'Hi %player% have fun!' #Change message to what you like or leave it '' to disable message
+welcome_broadcast: '%player% joined our server!' #Change message to what you like or leave it '' to disable message
+welcome_admin: 'Administrator %admin% joined server' #Change message to what you like or leave it '' to disable message
+#Admin panel configuration section
+admin_login: 'Welcome %admin% on server :)' #Change message to what you like or leave it '' to disable message
+admin_permission: 'vanilla.admin' # Default permission for admin
+admin_panel_header: '&f[&c+&f]&f Vertuli Panel &f[&c+&f]' # Text on chat when admin is logged into the panel
+admin_announce: 'enable' # enable/disable to announce admin panel log in/out to players
+admin_announce_msg_login: "&7[&c+&7]&f Admin &6%admin% &fhas logged in into panel!"
+admin_announce_msg_logout: "&7[&c+&7]&f Admin &6%admin% &fhas logged out from panel!"
+admin_panel: 'enable' # enable/disable to turn on/off admin panel after logon
