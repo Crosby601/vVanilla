@@ -27,7 +27,7 @@ public class adminLogon implements Listener {
                 player.sendMessage("");
             }
             if (!apan.equalsIgnoreCase("disable")) {
-                player.sendMessage(ChatFormat.color("&cGet access to admin panel by command /cpanel"));
+                //player.sendMessage(ChatFormat.color("&cGet access to admin panel by command /cpanel"));
             }
         }
     }

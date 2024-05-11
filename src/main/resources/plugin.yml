@@ -5,4 +5,9 @@ api-version: '1.20'
 commands:
   cpanel:
     description: Opens admin panel
-    usage: "/cpanel"
+    usage: /cpanel <login|logout>
+    permission: vanilla.admin
+  chat:
+    description: Toggle chat on or off or clear chat
+    usage: /chat <on|off|cc>
+    permission: vanilla.chat

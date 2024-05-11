@@ -1,5 +1,6 @@
 package club.vertuli.vvanilla.commands;
 
+import club.vertuli.vvanilla.utils.BossbarUtils;
 import club.vertuli.vvanilla.utils.ChatFormat;
 import club.vertuli.vvanilla.menus.adminMenu;
 import club.vertuli.vvanilla.vVanilla;
@@ -33,9 +34,10 @@ public class adminPanel implements CommandExecutor {
         String ann = plugin.getConfig().getString("admin_announce", "");
         String aplin = plugin.getConfig().getString("admin_announce_msg_login", "");
         String aplout = plugin.getConfig().getString("admin_announce_msg_logout", "");
+        String no_perm = plugin.getConfig().getString("no_permission","");
 
         if (!player.hasPermission(permission)) {
-            player.sendMessage(ChatFormat.color("&cYou do not have permission to use this command."));
+            player.sendMessage(ChatFormat.color(no_perm));
             return true;
         }
 
@@ -54,6 +56,7 @@ public class adminPanel implements CommandExecutor {
                     if (ann.equalsIgnoreCase("enable")) {
                         String loginMessage = ChatFormat.color(aplin.replace("%admin%", player.getName()));
                         for (Player p : plugin.getServer().getOnlinePlayers()) {
+                            BossbarUtils.bossbarShow(ChatFormat.color(loginMessage),5);
                             if (p != player) {
                                 p.sendMessage(ChatFormat.color(pheader));
                                 p.sendMessage(loginMessage);
@@ -71,6 +74,7 @@ public class adminPanel implements CommandExecutor {
                     if (ann.equalsIgnoreCase("enable")) {
                         String logoutMessage = ChatFormat.color(aplout.replace("%admin%", player.getName()));
                         for (Player p : plugin.getServer().getOnlinePlayers()) {
+                            BossbarUtils.bossbarShow(ChatFormat.color(logoutMessage),5);
                             if (p != player) {
                                 p.sendMessage(ChatFormat.color(pheader));
                                 p.sendMessage(logoutMessage);
@@ -80,7 +84,7 @@ public class adminPanel implements CommandExecutor {
                 }
                 break;
             default:
-                player.sendMessage(ChatFormat.color("&cInvalid command usage. Use /cpanel login or /cpanel logout."));
+                player.sendMessage(ChatFormat.color("&cInvalid command usage. Use /cpanel <login|logout> or /cpanel"));
                 break;
         }
 
