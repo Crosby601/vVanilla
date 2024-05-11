@@ -1,6 +1,6 @@
 # vVanilla Admin Tools 🛠
 
-![version](https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000) ![Minecraft](https://img.shields.io/badge/Minecraft-1.20.4-brightgreen.svg) ![Java](https://img.shields.io/badge/Java-17-red.svg)
+![version](https://img.shields.io/badge/version-0.75-blue.svg?cacheSeconds=2592000) ![Minecraft](https://img.shields.io/badge/Minecraft-1.20.4-brightgreen.svg) ![Java](https://img.shields.io/badge/Java-17-red.svg)
 
 vVanilla Admin Tools to zaawansowany plugin do serwerów Minecraft, który umożliwia administratorom efektywne zarządzanie ustawieniami serwera i graczami poprzez intuicyjne interfejsy użytkownika oraz komendy. Plugin jest przeznaczony dla serwerów działających na wersji Minecraft 1.20.4.
 
