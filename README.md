@@ -8,9 +8,10 @@ vVanilla Admin Tools to zaawansowany plugin do serwerów Minecraft, który umoż
 
 - **Interaktywny Panel Administracyjny GUI**: Umożliwia administratorom wykonywanie różnych działań administracyjnych, takich jak zmiana czasu i pogody, czy zarządzanie zapisem ekwipunku graczy, bezpośrednio przez graficzny interfejs użytkownika.
 - **Komendy Administrowania**: Zawiera komendy takie jak `/cpanel` do łatwego przełączania się między stanami logowania i wylogowania admina oraz otwierania panelu administracyjnego.
-- **Admin Panel:**
+- `/cpanel` - Otwiera panel administratora z dodatkowymi funkcjami
 - `/cpanel login` - Dodaje uprawnienia operatora, zmienia tryb gry na kreatywny i informuje graczy, że admin uruchomił swoje uprawnienia
-- `/cpanel logout` - Odbiera uprawnienia operatora, zmienai tryb gry na przetrwanie i informuje graczy, że admin wyłączył swoje uprawnienia
+- `/cpanel logout` - Odbiera uprawnienia operatora, zmienia tryb gry na przetrwanie i informuje graczy, że admin wyłączył swoje uprawnienia
+- `/chat <on|off|cc>` - Pozwala zarządzać czatem, włączać/wyłączać oraz czyścić go
 - **Więcej wkrótce!**
 
 ## Wymagania 📋
@@ -34,6 +35,9 @@ Plugin nie wymaga początkowej konfiguracji. Wszystkie ustawienia są dynamiczni
 - `/cpanel` - Otwiera panel administracyjny.
 - `/cpanel login` - Loguje jako admin.
 - `/cpanel logout` - Wylogowuje jako admin.
+- `/chat on` - Włącza możliwość pisania na czacie dla graczy
+- `/chat off` - Wyłącza możliwość pisania na czacie dla graczy
+- `/chat cc` - Czyści czat z wiadomości
 
 ## Współpraca 🤝
 
